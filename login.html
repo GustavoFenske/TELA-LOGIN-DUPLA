@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TELA_LOGIN</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class=" roeder position-absolute top-50 start-50 translate-middle shadow-lg p-3 mb-5 bg-body-tertiary text-center">
+            <h2 id="titulo">LOGIN</h2>
+            <form id="form-login">
+                <div id="c-usuario" classe="conjunto">
+                    <label class="container" for="usuario">Usuário: </label>
+                    <input type="usuario" id="usuario" placeholder="usuario" required>
+                </div>
+                <div id="c-senha" classe="conjunto">
+                    <label class="container" for="senha">Senha: </label>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                </div>
+                <br>
+                <button class=" btn btn-primary" id="botao-envio" type="submit">Entrar</button>
+
+            </form>
+            <div id="mensagem"></div>
+            <div class="toggle" id="toggle">
+                <p> Não tem conta? Cadastre-se! </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

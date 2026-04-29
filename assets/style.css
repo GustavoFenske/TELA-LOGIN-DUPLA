@@ -1,0 +1,16 @@
+body {
+    background-image: url(../assets/img/sbr\ bkgrnd.png);
+    background-size: cover;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.quadradinho{
+    background-image: url(../assets/img/papel\ antigo.avif);
+}
+
+.roeder{
+    border-radius: 10%;
+}
