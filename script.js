@@ -23,7 +23,12 @@ document.getElementById("form-login").onsubmit = (e) => {
     }
 
     if (senha.length <= 0) {
-        mensagem.innerHTML = "<div class='erro'><p> Senha muito curta!</p></div>";
+        mensagem.innerHTML = "<div class='erro'><p> Digite uma senha!</p></div>";
         return;
     }
+
+    if ((usuario != admin ) && (senha != 1234)){
+        mensagem.innerHTML = "<div class='erro'><p> Usuário ou senha incorreto!</p></div>";
+        return;
+    } 
 }
