@@ -27,7 +27,9 @@ document.getElementById("form-login").onsubmit = (e) => {
         return;
     }
 
-    if ((usuario != admin ) && (senha != 1234)){
+    if ((usuario === admin ) && (senha === 1234)){
+        window.location.href = "home.html";
+    } else {
         mensagem.innerHTML = "<div class='erro'><p> Usuário ou senha incorreto!</p></div>";
         return;
     } 
