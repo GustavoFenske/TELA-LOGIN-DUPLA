@@ -4,7 +4,11 @@ document.getElementById("toggle").onclick = () => {
     cadastro = !cadastro;
     document.getElementById("titulo").innerText = cadastro ? "CADASTRO" : "LOGIN";
     document.querySelector ("button").innerText = cadastro ? "cadastrar" : "Entrar";
-    document.getElementById("toggle").innerText = cadastro ? "já tem conta? faça login!" : "nao tem conta? Cadastre-se!";
+    document.getElementById("toggle").innerText = cadastro 
+    ? "já tem conta? faça login!" 
+    : "nao tem conta? Cadastre-se!";
+    
+    document.getElementById("mensagem").innerHTML = " ";
     
 }
 
@@ -13,24 +17,25 @@ document.getElementById("form-login").onsubmit = (e) => {
 
     let usuario = document.getElementById("usuario").value;
     let senha = document.getElementById("senha").value;
-    let mensagem = document.getElementById("mensagem").value;
+    let mensagem = document.getElementById("mensagem");    
 
-    mensagem.innerHTML = " ";
+        mensagem.innerHTML = "";
 
-    if (usuario.length < 0 ) {
-        mensagem.innerHTML = "<div class='erro'><p> digite um usuário!</p></div>";
-        return;
-    }
 
-    if (senha.length <= 0) {
-        mensagem.innerHTML = "<div class='erro'><p> Digite uma senha!</p></div>";
-        return;
-    }
+        if (cadastro){
+            localStorage.setItem(usuario,senha);
+            mensagem.innerHTML = "<div class = 'sucesso'> <p> Cadastro com sucesso</p><div>"; 
 
-    if ((usuario === admin ) && (senha === 1234)){
-        window.location.href = "home.html";
-    } else {
-        mensagem.innerHTML = "<div class='erro'><p> Usuário ou senha incorreto!</p></div>";
-        return;
+        } else {
+            let salva = localStorage.getItem(usuario);
+            if ((usuario === "admin") && (senha === "1234")){
+               mensagem.innerHTML = "<div class = 'sucesso'> <p> login com sucesso</p><div>";   
+                window.location.href = "home.html";
+
+            } else{
+                mensagem.innerHTML = "<div class = 'erro'> <p> Dados incorreto!</p><div>";
+    
+            }
+        }
+        document.getElementById("form-login").reset();
     } 
-}
