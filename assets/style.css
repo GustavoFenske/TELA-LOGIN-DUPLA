@@ -82,3 +82,36 @@ img{
     .cabeca0{
         font-size: 40px;
     }
+
+    header {
+  background-color: rgba(255, 255, 255, 0.699);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.tabela_container {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.tabela {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.tabela.active {
+  color: #000000;
+  border-bottom: 5px solid #13cf52;
+  border-radius: 4px;
+}
+
+.tabela:hover {
+  color: #13cf52;
+}
+
