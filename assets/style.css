@@ -22,7 +22,7 @@ body {
     text-align: center;
     position: static;
     border-radius: 20px;
-    display: inline-flex;
+    
     
 }
 
@@ -56,4 +56,29 @@ img{
     .gyro{
         height: 200px;
         width: 200px;
+    }
+
+    .nome_principal{
+        text-align: center;
+    }
+
+    .descricao_prsng{
+        font-size: 15px;
+    }
+
+    .titulo{
+        font-size: 25px;
+    }
+
+    footer{
+        background-color: rgba(255, 255, 255, 0.699);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    position: static;
+    border-radius: 20px;
+    }
+
+    .cabeca0{
+        font-size: 40px;
     }
