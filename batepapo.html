@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title>batepapo</title>
 </head>
+
 <body>
-    <header>
+
+    <header class="cabeca-pagina-chat">
         <div>
         <nav class="tabela_container">
        <a href="home.html" class="tabela" onclick="selectTab(this)">Início</a>
@@ -16,5 +19,44 @@
         </nav>
         </div>
     </header>
+    
+        <main class="container_do_chat">
+            <div class="mensagens_do_chat">
+                <div class="mensagem received">
+                    <span class="user">Gyro:</span>
+                    <p>Ei, você aí! Já ouviu falar na lição número 1?</p>
+                    <p>Não tente entender tudo de uma vez, apenas observe o movimento...</p>
+                    <p>Tudo neste mundo gira em torno da Rotação, inclusive essa nossa conversa.</p>
+                    <p>Nyo-ho! Olhe para estas esferas de aço... a perfeição está no equilíbrio.</p>
+                    <p>Aliás, acabei de compor uma música nova, quer ouvir?</p>
+                    <p>Pizza mozzarella... pizza mozzarella... Rella rella rella rella!</p>
+                    <p>Vai ser um sucesso na Europa, eu tenho certeza absoluta.</p>
+                    <p>Mas chega de brincadeira, o vento está mudando de direção.</p>
+                    <p>Johnny, você está prestando atenção? O caminho mais curto é sempre o desvio.</p>
+                    
+                </div>
+                
+                <div class="mensagem sent">
+                    <span class="user">Você:</span>
+                    <p>Lá vem você de novo com essas lições, Gyro... eu ainda estou tentando entender a anterior.</p>
+                    <p>Mas eu admito, o jeito que você gira essas esferas é... hipnotizante.</p>
+                    <p>Eu daria tudo para conseguir esse tipo de força nas minhas próprias pernas.</p>
+                    <p>Espera, você disse música? Por favor, não comece com aquela da pizza de novo.</p>
+                    <p>Tarde demais. Já grudou na minha cabeça. 'Rella rella rella'...</p>
+                </div>
+            </div>
+
+            <div class="area_do_chat">
+                <input type="text" placeholder="Digite sua mensagem...">
+                <button>Enviar</button>
+            </div>
+      
+    </main>
+
+    
+    <footer class="pe-pagina-chat">
+        <p class="titulo"><b>Todos os direitos reservados a Arthur Roeder e Gustavo Fenske</b></p>
+    </footer>
+
 </body>
 </html>
