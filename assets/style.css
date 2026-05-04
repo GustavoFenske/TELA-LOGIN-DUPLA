@@ -243,6 +243,7 @@ img{
 .fundo-trajeto{
     background-color: rgba(255, 255, 255, 0.699) ;
     border-radius: 20px;
+    padding: 20px;
 }
 .container_do_chat {
     
