@@ -34,8 +34,10 @@ img{
 .purple{
         
         display:flex ;
+       flex-direction: column;
         justify-content: center;
         padding: 20px;
+        align-items: center;
     }
 
     .yellow{
@@ -166,4 +168,79 @@ img{
     border-color: #13cf52;
     color: #13cf52;
     background-color: rgba(19, 207, 82, 0.1);
+}
+
+.secao-mapa {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-mapa {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.mapa-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.linha-trajeto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+.linha-trajeto::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #ccc;
+    z-index: 1;
+}
+
+.ponto {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.ponto.concluido {
+    background: #13cf52;
+    border-color: #0b8a37;
+    color: white;
+}
+
+.ponto.ativo {
+    background: #13cf52;
+    border-color: #000;
+    color: white;
+    box-shadow: 0 0 15px #13cf52;
+    transform: scale(1.2);
+}
+
+.info-estagio {
+    padding: 20px;
+    text-align: left;
+    border-left: 5px solid #13cf52;
+}
+
+.fundo-trajeto{
+    background-color: rgba(255, 255, 255, 0.699) ;
+    border-radius: 20px;
 }
