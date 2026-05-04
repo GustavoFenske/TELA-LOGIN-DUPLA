@@ -114,3 +114,56 @@ img{
 .tabela:hover {
   color: #13cf52;
 }
+
+.home-conteudo {
+    text-align: center;
+    max-width: 700px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao_home {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 1.6;
+}
+
+.acao-botao {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.botao-home {
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #13cf52;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px solid #13cf52;
+    display: inline-block;
+}
+
+.botao-home:hover {
+    background-color: transparent;
+    color: #13cf52;
+    transform: translateY(-3px);
+}
+
+.botao-home.segundo {
+    background-color: transparent;
+    color: #000;
+    border-color: #000;
+}
+
+.botao-home.segundo:hover {
+    border-color: #13cf52;
+    color: #13cf52;
+    background-color: rgba(19, 207, 82, 0.1);
+}
